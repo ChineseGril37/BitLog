@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BBLog-Server" />
+        <module name="BitLog-Server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,7 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="BBLog-Server" options="-parameters" />
+      <module name="BitLog-Server" options="-parameters" />
     </option>
   </component>
 </project>
