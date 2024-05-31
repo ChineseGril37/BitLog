@@ -8,7 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
   server:{
     //前端端口号
-    port:7071,
+    port:7070,
     host:'0.0.0.0',
     //未开启https
     https: false

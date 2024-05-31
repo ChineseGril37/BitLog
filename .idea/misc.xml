@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/BBLog-admin/pom.xml" />
         <option value="$PROJECT_DIR$/BBLog-Admin/pom.xml" />
+        <option value="$PROJECT_DIR$/BBLog-Server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
