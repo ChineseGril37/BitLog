@@ -1,11 +1,12 @@
-package org.lengs.bblogserver.config;
+package org.lengs.bitlogserver.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 /**
- * 解决跨域问题
- * @author lengs
+ * @Author: lengs
+ * @Date: 2024/5/31 23:14
+ * @Description: 解决跨域问题
+ * @Version: 1.0
  */
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {
