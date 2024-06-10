@@ -1,6 +1,7 @@
 package org.lengs.bitlogserver.common;
 
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -17,6 +18,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * @Description: ResponseAdvice实现ResponseBodyAdvice。拦截Controller方法默认返回参数，统一处理响应体
  * @Version: 1.0
  */
+@Slf4j
 @RestControllerAdvice
 public class ResponseAdvice implements ResponseBodyAdvice<Object> {
     @Autowired
@@ -31,6 +33,11 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
     @SneakyThrows
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
         if(body instanceof String){
+            try {
+                return objectMapper.writeValueAsString(Result.success(body));
+            } catch (JsonProcessingException json) {
+                log.trace(String.valueOf(json));
+            }
             return objectMapper.writeValueAsString(Result.success(body));
         }
         if(body instanceof Result){

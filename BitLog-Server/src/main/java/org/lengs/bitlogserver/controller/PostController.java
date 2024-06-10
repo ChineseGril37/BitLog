@@ -23,4 +23,9 @@ public class PostController {
     public int listPost(){
         return 9;
     }
+    @GetMapping("/error")
+    public int error(){
+        return 9/0;
+        // throw new RuntimeException("自定义异常");
+    }
 }
