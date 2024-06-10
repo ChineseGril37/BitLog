@@ -1,7 +1,8 @@
 package org.lengs.bitlogserver.entity;
 
-import io.swagger.annotations.ApiModel;
+import java.util.Date;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 /**
  * @Author: lengs
@@ -9,10 +10,13 @@ import io.swagger.annotations.ApiModelProperty;
  * @Description: 帖子实体
  * @Version: 1.0
  */
+@Data
 public class Post {
     @ApiModelProperty(value = "用户角色id")
     private long id;
     private String title;
     private String type;
-
+    private Date createTime;
+    private Date updateTime;
+    private int view;
 }
