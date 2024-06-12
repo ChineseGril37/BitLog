@@ -2,11 +2,11 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.lengs.bitlogserver.dao.PostDao">
+<mapper namespace="org.lengs.bitlogserver.dao.PostMapper">
     <select id="listPost" resultType="org.lengs.bitlogserver.entity.Post">
-        select * from post;
+        select * from post
     </select>
-    <select id="sort" resultType="java.lang.Object">
-        select * from post;
+    <select id="sort" resultType="org.lengs.bitlogserver.entity.Post">
+        select * from post
     </select>
 </mapper>

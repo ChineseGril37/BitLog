@@ -4,7 +4,13 @@
 > 
 > 开发框架：*SpringBoot/Vue.js*
 > 
+> UI组件框架:*Vuetify*
+> 
 > 数据库：*MySQL*
+> 
+> 持久层：*MyBatis*
+> 
+> 连接池：*HikariPool*
 > 
 > 日志系统：*Logback* 
 

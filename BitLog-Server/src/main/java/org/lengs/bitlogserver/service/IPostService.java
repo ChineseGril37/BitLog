@@ -1,6 +1,9 @@
 package org.lengs.bitlogserver.service;
 
 import org.lengs.bitlogserver.controller.request.PostRequest;
+import org.lengs.bitlogserver.entity.Post;
+
+import java.util.List;
 
 /**
  * @Author lengs
@@ -10,7 +13,7 @@ import org.lengs.bitlogserver.controller.request.PostRequest;
  */
 
 public interface IPostService {
-    Object listPost();
+    List<Post> listPost();
 
     Object sort(PostRequest postRequest);
 }

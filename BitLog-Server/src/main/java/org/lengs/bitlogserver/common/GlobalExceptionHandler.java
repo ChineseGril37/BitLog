@@ -21,7 +21,9 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(Exception.class)
     public Result<String> exception(Exception error) {
         //log.error("全局异常信息 >>>{}", error.getMessage(), error);
+        log.error("=================================================================================ERROR==================================================================================");
         log.error("全局异常信息 >>> " + error);
+        log.error("========================================================================================================================================================================");
         //log.error("使用 + 号连接直接输出 e.getMessage() : " + error.getMessage());
         //log.error("使用 + 号连接直接输出 e.toString() : " + error.toString());
         // 使用逗号分隔，调用两个参数的error方法

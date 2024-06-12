@@ -14,9 +14,13 @@ import lombok.Data;
 public class Post {
     @ApiModelProperty(value = "用户角色id")
     private Long id;
+    private Long creater;
     private String title;
     private String type;
-    private Date createTime;
-    private Date updateTime;
+    private Date createtime;
+    private Date updatetime;
     private Integer view;
+    private Integer likes;
+    private Integer views;
+    private Double hotpoint;
 }
