@@ -1,12 +1,9 @@
 package org.lengs.bitlogserver.controller;
 
-import org.lengs.bitlogserver.controller.request.PageRequest;
-import org.lengs.bitlogserver.entity.Post;
+import org.lengs.bitlogserver.controller.request.PostRequest;
 import org.lengs.bitlogserver.service.IPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * @Author: lengs
@@ -27,8 +24,8 @@ public class PostController {
         return postService.listPost();
     }
     @GetMapping("/")
-    public Object sort(PageRequest pageRequest){
-        return postService.sort(pageRequest);
+    public Object sort(PostRequest postRequest){
+        return postService.sort(postRequest);
     }
     @GetMapping("/error")
     public int error(){

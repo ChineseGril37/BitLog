@@ -1,12 +1,11 @@
 package org.lengs.bitlogserver.service.impl;
 
+import org.lengs.bitlogserver.controller.request.PostRequest;
 import org.lengs.bitlogserver.dao.PostDao;
-import org.lengs.bitlogserver.entity.Post;
 import org.lengs.bitlogserver.service.IPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 
 /**
  * @Author: lengs
@@ -24,7 +23,7 @@ public class PostService implements IPostService {
     }
 
     @Override
-    public Object sort(PageRequest pageRequest) {
-        return postDao.sort(pageRequest);
+    public Object sort(PostRequest postRequest) {
+        return postDao.sort(postRequest);
     }
 }

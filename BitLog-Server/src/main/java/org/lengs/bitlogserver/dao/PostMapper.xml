@@ -6,5 +6,7 @@
     <select id="listPost" resultType="org.lengs.bitlogserver.entity.Post">
         select * from post;
     </select>
-    <select id="sort" resultType="java.lang.Object"></select>
+    <select id="sort" resultType="java.lang.Object">
+        select * from post;
+    </select>
 </mapper>

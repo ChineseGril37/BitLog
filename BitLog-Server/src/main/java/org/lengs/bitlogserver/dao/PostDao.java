@@ -1,9 +1,8 @@
 package org.lengs.bitlogserver.dao;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.lengs.bitlogserver.entity.Post;
+import org.lengs.bitlogserver.controller.request.PostRequest;
 
-import java.util.List;
 
 /**
  * @Author: lengs
@@ -15,5 +14,5 @@ import java.util.List;
 public interface PostDao {
     Object listPost();
 
-    Object sort(PageRequest pageRequest);
+    Object sort(PostRequest postRequest);
 }
