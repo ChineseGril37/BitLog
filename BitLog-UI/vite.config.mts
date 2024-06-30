@@ -44,6 +44,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // 这个用于启动
     port: 7070, // 指定启动端口
-    open: true //启动后是否自动打开浏览器
+    open: false //启动后是否自动打开浏览器
   },
 })
