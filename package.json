@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47"
   }
 }

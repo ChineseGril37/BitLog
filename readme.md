@@ -23,27 +23,9 @@
 根据设置的大类分类查看：暂拟前端、后端、MySQL、Debug、个人学习
 
 帖子查看排序：热度(默认)、最多浏览、最多点赞、最新发布、最早发布
-### MySQL建表
-> ### Post表(博客贴)
-> bigint id 帖子ID(主键)
-> 
-> varchar title 帖子标题
-> 
-> varchar type 帖子分类
-> 
-> bigint creater 创建者ID
-> 
-> datetime createtime 创建日期
-> 
-> datetime updatetime 更新日期
-> 
-> int likes 点赞数
-> 
-> int views 浏览数
-> 
 > double hotpoint 热度值
 
-> ### 热度值影响算法
+### 热度值影响算法
 > 热度影响因素主要有：__点赞数__、__浏览数__、__评论数__、__发布时间__
 > 
 > 根据Hacker News社区的热度算法。引入连续时间衰减系数，排名策略同时考虑用户点赞数和时间因素
@@ -60,6 +42,24 @@
 > 
 > G表示“重力因子”（gravityth power，G>1），即将帖子排名往下拉的力量
 
+### MySQL建表
+> ### Post表(博客贴)
+> bigint id 帖子ID(主键)
+>
+> varchar title 帖子标题
+>
+> varchar type 帖子分类
+>
+> bigint creater 创建者ID
+>
+> datetime createtime 创建日期
+>
+> datetime updatetime 更新日期
+>
+> int likes 点赞数
+>
+> int views 浏览数
+> 
 
 
 
