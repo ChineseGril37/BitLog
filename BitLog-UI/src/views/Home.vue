@@ -1,11 +1,11 @@
 <template>
   <!--上导航栏-->
-    <v-app-bar class="home_header" flat>
+    <v-app-bar class="font_set" flat>
       <v-container class="mx-auto d-flex align-center justify-center ">
-        <div class="site_name">BitLog</div>
+        <div class="site_name font_set">BitLog</div>
 
         <v-btn
-          class="header_btn"
+          class="header_btn font_set"
           v-for="link in links"
           :text="link.title"
           @click="header_click(link.url)"
@@ -39,6 +39,7 @@
                   :key="n"
                   :title="`Java ${n}`"
                   link
+                  class="font_set"
                 ></v-list-item>
 
                 <v-divider class="my-2"></v-divider>
@@ -46,6 +47,7 @@
                 <v-list-item
                   color="grey-lighten-4"
                   title="Refresh"
+                  class="font_set"
                   link
                 ></v-list-item>
               </v-list>
@@ -56,8 +58,9 @@
             <v-sheet
               min-height="90vh"
               rounded="lg"
+              class="font_set"
             >
-
+              <Post/>
               <!--  -->
             </v-sheet>
           </v-col>
@@ -69,8 +72,10 @@
 
 <script>
 import axios from 'axios'
+import Post from '@/views/Post/Index.vue'
 
 export default {
+  components: { Post },
   data: () => ({
     links: [
       {title:'博客',url:'/post'},
@@ -102,16 +107,14 @@ export default {
   font-size: 24px;
   letter-spacing: 1px;
   padding: 2dvw 0;
-  color:rgba(230,230,230);
-}
-.home_header{
-  background-color: rgba(251,251,253);
-  font-family: Sinter-Regular,system-ui;
 }
 .header_btn{
-  color:rgba(230,230,230);
   padding: 0 1dvw;
   margin: 0 1.5dvw  ;
   font-size: 18px;
+}
+.font_set{
+  color:rgba(210,210,210);
+  font-family: Sinter-Regular,system-ui;
 }
 </style>

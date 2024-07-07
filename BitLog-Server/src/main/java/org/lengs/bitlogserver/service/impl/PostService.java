@@ -30,8 +30,8 @@ public class PostService implements IPostService {
 
     @Override
     public Object sort(PostRequest postRequest) {
-        System.out.println("postRequest.getPageNum()="+postRequest.getPageNum());
-        System.out.println("postRequest.getPageSize()="+postRequest.getPageSize());
+//        System.out.println("postRequest.getPageNum()="+postRequest.getPageNum());
+//        System.out.println("postRequest.getPageSize()="+postRequest.getPageSize());
         PageHelper.startPage(postRequest.getPageNum(),postRequest.getPageSize());
         List<Post> posts = postMapper.sort(postRequest);
         return new PageInfo<>(posts);

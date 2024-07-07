@@ -6,7 +6,6 @@
 //外部引入全局字体
 import "@/assets/font/Sinter-font/Sinter-font.css"
 // Plugins
-import request from '@/plugins/axios/index'
 import { registerPlugins } from '@/plugins'
 
 // Components
