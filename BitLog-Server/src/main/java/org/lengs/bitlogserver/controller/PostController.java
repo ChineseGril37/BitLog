@@ -28,6 +28,7 @@ public class PostController {
     }
     @GetMapping("/sort")
     public Object sort(PostRequest postRequest){
+        System.out.println("传参:"+postRequest);
         return postService.sort(postRequest);
     }
     @GetMapping("/error")

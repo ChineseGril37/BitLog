@@ -1,6 +1,7 @@
 package org.lengs.bitlogserver.controller.request;
 
 import lombok.Data;
+import lombok.ToString;
 
 /**
  * @Author: lengs
@@ -9,8 +10,9 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
+@ToString(callSuper = true)
 public class PostRequest extends BaseRequest {
     private Integer id;
     private String type;
-    private String selectType;
+    private String selectType = "Hot";
 }

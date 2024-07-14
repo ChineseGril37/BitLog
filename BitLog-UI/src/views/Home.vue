@@ -2,18 +2,19 @@
   <!--上导航栏-->
     <v-app-bar class="font_set" flat>
       <v-container class="mx-auto d-flex align-center justify-center ">
-        <div class="site_name font_set">BitLog</div>
-
-        <v-btn
+        <!-- 网站抬头logo -->
+        <a href="/">
+          <div class="site_name font_set" >BitLog</div>
+        </a>
+        <RouterLink
           class="header_btn font_set"
+          active-class=""
           v-for="link in links"
-          :text="link.title"
-          @click="header_click(link.url)"
-          variant="text"
-        ></v-btn>
-
+            :to="link.path"
+            :text="link.title"
+        >
+        </RouterLink>
         <v-spacer></v-spacer>
-
         <v-responsive max-width="260">
           <v-text-field
             density="compact"
@@ -27,80 +28,27 @@
         </v-responsive>
       </v-container>
     </v-app-bar>
-
-    <v-main class="background">
-      <v-container>
-        <v-row>
-          <v-col cols="2">
-            <v-sheet rounded="lg">
-              <v-list rounded="lg">
-                <v-list-item
-                  v-for="n in 5"
-                  :key="n"
-                  :title="`Java ${n}`"
-                  link
-                  class="font_set"
-                ></v-list-item>
-
-                <v-divider class="my-2"></v-divider>
-
-                <v-list-item
-                  color="grey-lighten-4"
-                  title="Refresh"
-                  class="font_set"
-                  link
-                ></v-list-item>
-              </v-list>
-            </v-sheet>
-          </v-col>
-
-          <v-col >
-            <v-sheet
-              min-height="90vh"
-              rounded="lg"
-              class="font_set"
-            >
-              <Post/>
-              <!--  -->
-            </v-sheet>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
+  <RouterView></RouterView>
 </template>
 
 
 <script>
-import axios from 'axios'
-import Post from '@/views/Post/Index.vue'
+import Post from '@/views/Post/index.vue'
 
 export default {
   components: { Post },
   data: () => ({
     links: [
-      {title:'博客',url:'/post'},
-      {title:'随笔',url:'/mood'},
-      {title:'资源',url:'/resources'},
-      {title:'友链',url:'/friends'},
+      {title:'博客',path:'/post'},
+      {title:'随笔',path:'/mood'},
+      {title:'资源',path:'/resource'},
+      {title:'友链',path:'/friends'},
     ],
   }),
-  methods:{
-    header_click(url){
-      axios.get(url).then(res=>{
-
-      })
-    },
-  }
 }
 </script>
 
 <style scoped>
-.background{
-  font-family: Sinter-Regular,system-ui;
-  background-color: rgb(25, 25, 25);
-  height: 100%;
-  padding-top: 12px;
-}
 .site_name{
   font-weight: 400;
   margin-right: 1dvw;
@@ -113,8 +61,7 @@ export default {
   margin: 0 1.5dvw  ;
   font-size: 18px;
 }
-.font_set{
-  color:rgba(210,210,210);
-  font-family: Sinter-Regular,system-ui;
+* {
+  text-decoration: none;
 }
 </style>

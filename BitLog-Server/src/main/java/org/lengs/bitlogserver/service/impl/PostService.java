@@ -10,6 +10,7 @@ import org.lengs.bitlogserver.service.IPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -30,8 +31,6 @@ public class PostService implements IPostService {
 
     @Override
     public Object sort(PostRequest postRequest) {
-//        System.out.println("postRequest.getPageNum()="+postRequest.getPageNum());
-//        System.out.println("postRequest.getPageSize()="+postRequest.getPageSize());
         PageHelper.startPage(postRequest.getPageNum(),postRequest.getPageSize());
         List<Post> posts = postMapper.sort(postRequest);
         return new PageInfo<>(posts);

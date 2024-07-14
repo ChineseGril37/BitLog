@@ -1,13 +1,20 @@
 <template>
   <v-app>
-    <v-main>
-      <Home/>
+    <v-main class="background">
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script setup lang="ts">
-  import Home from '@/views/Home.vue'
 </script>
 <style>
+.background{
+  font-family: Sinter-Regular,system-ui;
+  background-color: rgb(25, 25, 25);
+  color:rgba(210,210,210);
+}
+.font_set{
+  color:rgba(210,210,210)
+}
 </style>

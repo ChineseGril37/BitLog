@@ -8,5 +8,13 @@
     </select>
     <select id="sort" resultType="org.lengs.bitlogserver.entity.Post">
         select * from post
+        <where>
+            <if test="id != null and id != ''">
+                id = #{id}
+            </if>
+            <if test="type != null and type != ''">
+                and type = #{type}
+            </if>
+        </where>
     </select>
 </mapper>
