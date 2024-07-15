@@ -1,5 +1,5 @@
 /**
- * plugins/index.ts
+ * api/axios
  *
  * Automatically included in `./src/main.ts`
  */

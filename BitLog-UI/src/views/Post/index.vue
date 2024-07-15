@@ -25,11 +25,6 @@
             class="font_set"
           >
             <!-- 博客内容 -->
-            <div>姓名：{{person.name}}</div>
-            <div>年龄：{{person.age}}</div>
-            <div>电话：{{person.tel}}</div>
-            <hr>
-            <v-btn @click="changeName">改名</v-btn>
           </v-sheet>
         </v-col>
       </v-row>
@@ -39,32 +34,20 @@
 
 <script setup lang="ts" name="Post">
 import { ref } from 'vue'
-  import request from '@/plugins/axios'
-  let person = ref({
-    name:'张三',
-    age:18,
-    tel:13888888888
+import request from '@/api/axios'
+let sideBar = ref([
+  {title:'热门'},
+  {title:'Java',type:'Java'},
+  {title:'Spring Boot',type:'SpringBoot'},
+  {title:'Redis',type:'Redis'},
+  {title:'数据库',type:'Database'},
+  {title:'Vue',type:'Vue'}
+])
+function sort(type){
+  request.get('post/sort',{params:{type:type,selectType:'Views'}}).then(res=>{
+    console.log(res.data)
   })
-  let sideBar = ref([
-    {title:'热门',type:''},
-    {title:'Java',type:'Java'},
-    {title:'Spring Boot',type:'SpringBoot'},
-    {title:'Redis',type:'Redis'},
-    {title:'数据库',type:'Database'},
-    {title:'Vue',type:'Vue'}
-  ])
-  function changeName(){
-    person.value.name = '李四'
-  }
-  function sort(type){
-    request.get('post/sort',{params:{type:type}}).then(res=>{
-      if(res.status == 0){
-        console.log(res.data.list)
-      }else {
-        alert(res.message)
-      }
-    })
-  }
+}
 </script>
 
 <style scoped>

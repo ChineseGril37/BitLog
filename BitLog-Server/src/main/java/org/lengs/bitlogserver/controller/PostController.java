@@ -31,8 +31,14 @@ public class PostController {
         System.out.println("传参:"+postRequest);
         return postService.sort(postRequest);
     }
-    @GetMapping("/error")
+    @GetMapping("/runtimeError")
     public int error(){
-            throw new RuntimeException("自定义异常");
+        throw new RuntimeException("自定义异常");
+    }
+    @GetMapping("/Error")
+    public int arithmeticError(){
+        int[] ans = new int[1];
+        return ans[1];
+        //throw new ArithmeticException ("计算异常");
     }
 }

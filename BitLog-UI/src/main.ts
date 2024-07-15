@@ -9,17 +9,11 @@ import "@/assets/font/Sinter-font/Sinter-font.css"
 import { registerPlugins } from '@/plugins/vuetify/index'
 
 // Components
-// 引入App根组件
-import App from './App.vue'
-
+import App from './App.vue' // 引入App根组件
 // Composables
-// 引入createApp用于创建应用
-import  { createApp } from 'vue'
-// 引入路由器
-import router from '@/router'
-// 创建一个名为app的应用
-const app = createApp(App)
-
+import  { createApp } from 'vue'  // 引入createApp用于创建应用
+import router from '@/router' // 引入路由器
+const app = createApp(App)  // 创建一个名为app的应用
 registerPlugins(app)
 // 使用路由器
 app.use(router)
