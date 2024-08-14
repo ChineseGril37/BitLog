@@ -32,7 +32,7 @@ public class PostService implements IPostService {
     public Object sort(PostRequest postRequest){
         PageHelper.startPage(postRequest.getPageNum(),postRequest.getPageSize());
         List<Post> posts = postMapper.sort(postRequest);
-        System.out.printf("Fetched posts from database: %s%n", posts);
+        //System.out.printf("Fetched posts from database: %s%n", posts);
         switch (postRequest.getSelectType()) {
             case "Likes":
                 posts.sort(Comparator.comparing(Post::getLikes).reversed());

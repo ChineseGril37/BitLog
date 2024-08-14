@@ -22,7 +22,7 @@ request.interceptors.request.use(config =>{
 request.interceptors.response.use(
   response => {
     let res = response.data;
-    if(res.status != 0){
+    if(res.status != 200){
       alert(res.message)
     }
     // 兼容服务端返回的字符串数据

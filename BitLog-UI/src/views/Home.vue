@@ -21,10 +21,10 @@
             label="搜索"
             rounded="lg"
             variant="solo-filled"
-            flat
             hide-details
             single-line
           ></v-text-field>
+
         </v-responsive>
       </v-container>
     </v-app-bar>

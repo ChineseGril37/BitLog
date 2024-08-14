@@ -1,6 +1,7 @@
 package org.lengs.bitlogserver.controller.request;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
@@ -11,6 +12,7 @@ import lombok.ToString;
  */
 @Data
 @ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class PostRequest extends BaseRequest {
     private Integer id;
     private String type;

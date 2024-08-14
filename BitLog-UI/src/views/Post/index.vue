@@ -25,6 +25,7 @@
             class="font_set"
           >
             <!-- 博客内容 -->
+
           </v-sheet>
         </v-col>
       </v-row>
@@ -38,11 +39,14 @@ import request from '@/api/axios'
 let sideBar = ref([
   {title:'热门'},
   {title:'Java',type:'Java'},
-  {title:'Spring Boot',type:'SpringBoot'},
-  {title:'Redis',type:'Redis'},
+  {title:'Vue',type:'Vue'},
   {title:'数据库',type:'Database'},
-  {title:'Vue',type:'Vue'}
+  {title:'Redis',type:'Redis'},
+  {title:'Spring Boot',type:'SpringBoot'},
 ])
+function fetchData(){
+
+}
 function sort(type){
   request.get('post/sort',{params:{type:type,selectType:'Views'}}).then(res=>{
     console.log(res.data)
