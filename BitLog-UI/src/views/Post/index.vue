@@ -26,15 +26,8 @@
           >
             <!-- 帖子展示框 -->
 
-            <v-list-item
-              v-for="n in postList"
-              :key="n.title"
-              :title="`${n.title}`"
-              link
-              class="font_set"
-              @click="sort(n.type)"
-            ></v-list-item>
-            <a>{{postList[0]}}</a>
+            <div>{{postList}}</div>
+            <div>{{postList[0]}}</div>
           </v-sheet>
         </v-col>
       </v-row>
@@ -45,8 +38,17 @@
 <script setup lang="ts" name="Post">
 import { onMounted, ref } from 'vue'
 import request from '@/api/axios'
-onMounted(()=>{
-  fetchData()})
+onMounted(() => {
+  /*
+  console.log(`the component is now mounted.postList=`)
+  console.log(postList)
+  */
+  fetchData()
+})
+let postList = ref()
+function fetchData(){
+  sort()
+}
 let sideBar = ref([
   {title:'热门'},
   {title:'Java',type:'Java'},
@@ -55,19 +57,9 @@ let sideBar = ref([
   {title:'Redis',type:'Redis'},
   {title:'Spring Boot',type:'SpringBoot'},
 ])
-let postList = ref([])
-function fetchData(){
-  request.get('post/list').then(res=>{
-    postList = res.data
-    console.log(postList)
-  })
-}
-
 function sort(type){
   request.get('post/sort',{params:{type:type,selectType:'Views'}}).then(res=>{
-    postList = res.data
-    console.log("sort["+type+"]更新后postList=")
-    console.log(postList)
+    postList.value = res.data.list
   })
 }
 </script>

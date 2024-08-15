@@ -24,7 +24,7 @@ public class PostService implements IPostService {
     @Autowired
     PostMapper postMapper;
     @Override
-    public List<Post> listPost() {
+    public Object listPost() {
         return postMapper.listPost();
     }
 

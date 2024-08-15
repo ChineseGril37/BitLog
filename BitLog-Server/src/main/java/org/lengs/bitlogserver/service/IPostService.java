@@ -13,7 +13,7 @@ import java.util.List;
  */
 
 public interface IPostService {
-    List<Post> listPost();
+    Object listPost();
 
     Object sort(PostRequest postRequest);
 }

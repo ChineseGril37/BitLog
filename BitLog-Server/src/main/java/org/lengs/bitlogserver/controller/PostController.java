@@ -22,7 +22,7 @@ public class PostController {
     IPostService postService;
 
     @GetMapping("/list")
-    public List<Post> listPost(){
+    public Object listPost(){
         //System.out.println(postService.listPost());
         return postService.listPost();
     }

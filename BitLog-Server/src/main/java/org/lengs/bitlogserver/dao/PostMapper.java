@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @Author: lengs
  * @Date: 2024/6/10 21:00
- * @Description:
+ * @Description: post mapper
  * @Version: 1.0
  */
 @Mapper
