@@ -1,6 +1,6 @@
 <template>
   <!--上导航栏-->
-    <v-app-bar class="font_set" flat>
+    <v-app-bar class="font_set app_bar" flat>
       <v-container class="mx-auto d-flex align-center justify-center ">
         <!-- 网站抬头logo -->
         <a href="/">
@@ -34,7 +34,6 @@
 
 <script>
 import Post from '@/views/Post/index.vue'
-
 export default {
   components: { Post },
   data: () => ({
@@ -48,20 +47,5 @@ export default {
 }
 </script>
 
-<style scoped>
-.site_name{
-  font-weight: 400;
-  margin-right: 1dvw;
-  font-size: 24px;
-  letter-spacing: 1px;
-  padding: 2dvw 0;
-}
-.header_btn{
-  padding: 0 1dvw;
-  margin: 0 1.5dvw  ;
-  font-size: 18px;
-}
-* {
-  text-decoration: none;
-}
+<style scoped src="../assets/css/Home.css">
 </style>

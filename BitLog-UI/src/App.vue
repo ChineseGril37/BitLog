@@ -12,9 +12,5 @@
 .background{
   font-family: Sinter-Regular,system-ui;
   background-color: rgb(25, 25, 25);
-  color:rgba(210,210,210);
-}
-.font_set{
-  color:rgba(210,210,210)
 }
 </style>

@@ -6,7 +6,7 @@
 //外部引入全局字体
 import "@/assets/font/Sinter-font/Sinter-font.css"
 // Plugins
-import { registerPlugins } from '@/plugins/vuetify/index'
+import { registerPlugins } from '@/plugins/vuetify'
 
 // Components
 import App from './App.vue' // 引入App根组件

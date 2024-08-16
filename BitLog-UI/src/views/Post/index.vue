@@ -1,11 +1,11 @@
 <template>
 
-  <v-main class="background">
-    <v-container class="background">
+  <v-main class="main_background">
+    <v-container class="main_container">
       <v-row>
-        <v-col cols="2">
-          <v-sheet rounded="lg">
-            <v-list rounded="lg">
+        <v-col cols="2" class="list_col">
+          <v-sheet class="border_radius">
+            <v-list class="border_radius">
               <v-list-item
                 v-for="n in sideBar"
                 :key="n.title"
@@ -18,16 +18,19 @@
           </v-sheet>
         </v-col>
 
-        <v-col >
+        <v-col class="list_col">
           <v-sheet
-            min-height="90vh"
-            rounded="lg"
-            class="font_set"
+            min-height="188dvh"
+            class="font_set post_sheet border_radius"
           >
-            <!-- 帖子展示框 -->
+            <!-- 排序筛选器 -->
 
-            <div>{{postList}}</div>
-            <div>{{postList[0]}}</div>
+            <!-- 帖子展示框 -->
+            <post-chunk
+              class="post_chunk"
+              v-for="postInfo in postList"
+              :list="postInfo"
+            ></post-chunk>
           </v-sheet>
         </v-col>
       </v-row>
@@ -38,6 +41,7 @@
 <script setup lang="ts" name="Post">
 import { onMounted, ref } from 'vue'
 import request from '@/api/axios'
+import PostChunk from '@/components/postChunk.vue'
 onMounted(() => {
   /*
   console.log(`the component is now mounted.postList=`)
@@ -49,14 +53,13 @@ let postList = ref()
 function fetchData(){
   sort()
 }
-let sideBar = ref([
+let sideBar = [
   {title:'热门'},
   {title:'Java',type:'Java'},
   {title:'Vue',type:'Vue'},
   {title:'数据库',type:'Database'},
   {title:'Redis',type:'Redis'},
-  {title:'Spring Boot',type:'SpringBoot'},
-])
+  {title:'Spring Boot',type:'SpringBoot'}]
 function sort(type){
   request.get('post/sort',{params:{type:type,selectType:'Views'}}).then(res=>{
     postList.value = res.data.list
@@ -64,9 +67,5 @@ function sort(type){
 }
 </script>
 
-<style scoped>
-.background{
-  height: 100%;
-  padding-top: 12px;
-}
+<style scoped src="../../assets/css/Post.css">
 </style>

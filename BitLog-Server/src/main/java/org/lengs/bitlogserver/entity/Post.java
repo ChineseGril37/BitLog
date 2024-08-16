@@ -23,4 +23,5 @@ public class Post {
     private Integer likes;
     private Integer views;
     private Double hotpoint;
+    private String shortcut;
 }
