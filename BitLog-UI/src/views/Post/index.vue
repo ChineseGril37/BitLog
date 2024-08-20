@@ -20,7 +20,6 @@
 
         <v-col class="list_col">
           <v-sheet
-            min-height="188dvh"
             class="font_set post_sheet border_radius"
           >
             <!-- 排序筛选器 -->
@@ -41,7 +40,7 @@
 <script setup lang="ts" name="Post">
 import { onMounted, ref } from 'vue'
 import request from '@/api/axios'
-import PostChunk from '@/components/postChunk.vue'
+import PostChunk from '@/components/PostChunk.vue'
 onMounted(() => {
   /*
   console.log(`the component is now mounted.postList=`)
@@ -61,11 +60,12 @@ let sideBar = [
   {title:'Redis',type:'Redis'},
   {title:'Spring Boot',type:'SpringBoot'}]
 function sort(type){
-  request.get('post/sort',{params:{type:type,selectType:'Views'}}).then(res=>{
+  request.get('post/sort',{params:{type:type,selectType:'Hotpoint'}}).then(res=>{
     postList.value = res.data.list
   })
 }
 </script>
 
-<style scoped src="../../assets/css/Post.css">
+<style scoped>
+@import "../../assets/css/post.css";
 </style>

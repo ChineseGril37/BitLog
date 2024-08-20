@@ -47,5 +47,7 @@ export default {
 }
 </script>
 
-<style scoped src="../assets/css/Home.css">
+<style scoped>
+@import "../assets/css/common.css";
+@import "../assets/css/home.css";
 </style>

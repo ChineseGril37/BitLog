@@ -7,7 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    PostChunk: typeof import('./src/components/postChunk.vue')['default']
+    PostChunk: typeof import('./src/components/PostChunk.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
