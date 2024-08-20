@@ -16,6 +16,11 @@ const router = createRouter({
           component: () => import('../views/Post/index.vue'),
         },
         {
+          path: '/post/article',
+          name: '文章',
+          component: () => import('../views/Post/Article.vue'),
+        },
+        {
           path: '/mood',
           name: '随笔',
           component: () => import('../views/Mood/index.vue'),
