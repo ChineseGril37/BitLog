@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Data
 public class File {
-    private Long id;
+    private Integer id;
     private String fileName;
     private String filePath;
     private Long fileSize;

@@ -1,9 +1,9 @@
 <template>
 
   <v-main class="main_background">
-    <v-container class="main_container">
-      <v-row>
-        <v-col cols="2" class="list_col">
+    <v-container class="main_container d-flex flex-row">
+      <div class="float_fix">
+        <div class="list_float list_col position-fixed">
           <v-sheet class="border_radius">
             <v-list class="border_radius">
               <v-list-item
@@ -16,24 +16,24 @@
               ></v-list-item>
             </v-list>
           </v-sheet>
-        </v-col>
+        </div>
+      </div>
+      <div class="list_col">
+        <v-sheet
+        class="font_set post_sheet border_radius"
+      >
+        <!-- 排序筛选器 -->
 
-        <v-col class="list_col">
-          <v-sheet
-            class="font_set post_sheet border_radius"
-          >
-            <!-- 排序筛选器 -->
+        <!-- 帖子展示框 -->
+        <post-chunk
+          class="post_chunk"
+          v-for="postInfo in postList"
+          :list="postInfo"
+          link
+        ></post-chunk>
+      </v-sheet>
 
-            <!-- 帖子展示框 -->
-            <post-chunk
-              class="post_chunk"
-              v-for="postInfo in postList"
-              :list="postInfo"
-              link
-            ></post-chunk>
-          </v-sheet>
-        </v-col>
-      </v-row>
+      </div>
     </v-container>
   </v-main>
 </template>
@@ -57,11 +57,11 @@ let sideBar = [
   {title:'热门'},
   {title:'Java',type:'Java'},
   {title:'Vue',type:'Vue'},
-  {title:'数据库',type:'Database'},
-  {title:'Redis',type:'Redis'},
-  {title:'Spring Boot',type:'SpringBoot'}]
+  {title:'Spring Boot',type:'SpringBoot'},
+  {title:'BitLog',type:'BitLog'},
+  {title:'Redis',type:'Redis'},]
 function sort(type){
-  request.get('post/sort',{params:{type:type,selectType:'Hotpoint'}}).then(res=>{
+  request.get('post/sort',{params:{type:type,selectType:'Views'}}).then(res=>{
     postList.value = res.data.list
   })
 }

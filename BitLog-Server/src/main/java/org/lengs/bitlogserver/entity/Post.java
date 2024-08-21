@@ -13,7 +13,7 @@ import lombok.Data;
 @Data
 public class Post {
     @ApiModelProperty(value = "用户角色id")
-    private Long id;
+    private Integer id;
     private Long creater;
     private String title;
     private String type;
