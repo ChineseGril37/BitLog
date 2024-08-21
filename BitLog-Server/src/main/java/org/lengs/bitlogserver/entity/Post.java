@@ -19,7 +19,6 @@ public class Post {
     private String type;
     private Date createtime;
     private Date updatetime;
-    private Integer view;
     private Integer likes;
     private Integer views;
     private Double hotpoint;

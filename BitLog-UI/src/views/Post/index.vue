@@ -29,6 +29,7 @@
               class="post_chunk"
               v-for="postInfo in postList"
               :list="postInfo"
+              link
             ></post-chunk>
           </v-sheet>
         </v-col>

@@ -1,7 +1,13 @@
 <template>
-
+  <div>id={{id}}</div>
 </template>
 <script setup lang="ts">
+defineProps(['id'])
+function fetch(){
+  request.get("/post/article",{params:{id:this.id}}).then((res)=>{
+    console.log(res)
+  })
+}
 </script>
 
 <style scoped>
