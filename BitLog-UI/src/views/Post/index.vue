@@ -3,7 +3,7 @@
   <v-main class="main_background">
     <v-container class="main_container d-flex flex-row">
       <div class="float_fix">
-        <div class="list_float list_col position-fixed">
+        <div class="list_float position-fixed">
           <v-sheet class="border_radius">
             <v-list class="border_radius">
               <v-list-item
@@ -18,7 +18,7 @@
           </v-sheet>
         </div>
       </div>
-      <div class="list_col">
+      <div class="list_col post_container">
         <v-sheet
         class="font_set post_sheet border_radius"
       >
