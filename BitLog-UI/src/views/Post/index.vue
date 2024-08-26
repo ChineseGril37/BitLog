@@ -69,4 +69,5 @@ function sort(type){
 
 <style scoped>
 @import "../../assets/css/post.css";
+@import "../../assets/css/common.css";
 </style>

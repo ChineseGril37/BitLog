@@ -1,6 +1,10 @@
 .font_set{
     color: rgb(245,245,247);
 }
+.main_container{
+    min-height: 78.3%;
+    padding: 8px 0 8px 0;
+}
 * {
     text-decoration: none;
 }

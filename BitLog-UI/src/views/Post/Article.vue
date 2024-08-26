@@ -1,5 +1,5 @@
 <template>
-  <div>id={{id}}</div>
+  <div class="main_container">id={{id}}</div>
 </template>
 <script setup lang="ts">
 defineProps(['id'])

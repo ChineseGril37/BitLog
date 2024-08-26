@@ -29,6 +29,10 @@
       </v-container>
     </v-app-bar>
   <RouterView></RouterView>
+  <!--备案和信息栏-->
+  <div class="more_information">
+    <div class="information_container">BitLog</div>
+  </div>
 </template>
 
 

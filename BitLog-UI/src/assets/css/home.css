@@ -13,3 +13,7 @@
 .font_set{
     color: rgb(195,195,196);
 }
+.more_information{
+    height: 20dvh;
+    background-color: rgb(33,33,33);
+}
