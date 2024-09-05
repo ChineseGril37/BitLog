@@ -16,4 +16,6 @@ public interface PostMapper {
     List<Post> listPost();
 
     List<Post> sort(PostRequest postRequest);
+
+    Post selectById(PostRequest postRequest);
 }

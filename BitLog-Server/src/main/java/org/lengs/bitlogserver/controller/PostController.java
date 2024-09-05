@@ -28,7 +28,12 @@ public class PostController {
     }
     @GetMapping("/sort")
     public Object sort(PostRequest postRequest){
+
         return postService.sort(postRequest);
+    }
+    @GetMapping("/selectById")
+    public Post selectById(PostRequest postRequest){
+        return postService.selectById(postRequest);
     }
     @GetMapping("/runtimeError")
     public int error(){

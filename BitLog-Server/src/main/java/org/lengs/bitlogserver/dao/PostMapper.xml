@@ -17,4 +17,7 @@
             </if>
         </where>
     </select>
+    <select id="selectById" resultType="org.lengs.bitlogserver.entity.Post">
+        select * from post where id = #{id};
+    </select>
 </mapper>

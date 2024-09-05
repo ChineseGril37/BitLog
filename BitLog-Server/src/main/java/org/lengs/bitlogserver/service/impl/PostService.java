@@ -1,6 +1,5 @@
 package org.lengs.bitlogserver.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.lengs.bitlogserver.controller.request.PostRequest;
@@ -52,5 +51,10 @@ public class PostService implements IPostService {
                 break;
         }
         return new PageInfo<>(posts);
+    }
+
+    @Override
+    public Post selectById(PostRequest postRequest) {
+        return postMapper.selectById(postRequest);
     }
 }

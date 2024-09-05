@@ -16,4 +16,6 @@ public interface IPostService {
     Object listPost();
 
     Object sort(PostRequest postRequest);
+
+    Post selectById(PostRequest postRequest);
 }

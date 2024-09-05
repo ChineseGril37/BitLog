@@ -1,16 +1,31 @@
 <template>
-  <div class="post_table">
-    <a class="font_set article_title"
-       href="/post/article"
-       @click="pushArticle"
+  <div class="post_chunk">
+    <!-- Router-Link跳转 -->
+    <RouterLink
+      class="font_set chunk_title"
+      :to="{path:'/article',query:{id: props.list.id}}"
     >
       <p>{{list.title}}</p>
-      </a>
+    </RouterLink>
+<!--    a标签跳转-->
+<!--    <a-->
+<!--      href="javascript:void(0);"-->
+<!--      class="font_set chunk_title"-->
+<!--      @click="pushArticle"-->
+<!--    >-->
+<!--      <p>herf跳转:{{list.title}}</p>-->
+<!--    </a>-->
+<!--    <div-->
+<!--      class="font_set chunk_title"-->
+<!--      @click="pushArticle"-->
+<!--    >-->
+<!--      <p>router.push:{{list.title}}</p>-->
+<!--    </div>-->
     <div
       class="chunk_type"
       v-ripple
     >{{list.type}}</div>
-    <div>{{list.shortcut}}</div>
+    <div class="chunk_shortcut">{{list.shortcut}}</div>
     <div
       class="d-flex flex-row"
     >
@@ -33,10 +48,15 @@
 <script setup lang="ts">
 //挂载props传入的具体博客数据
 import request from '@/api/axios'
-defineProps(['list'])
+import router from '@/router'
+const props = defineProps(['list'])
 function pushArticle(){
-  console.log('push article')
-  console.log(this.list)
+  router.push({
+    name: 'article',
+    query:{
+      id: props.list.id
+    }
+  })
 }
 </script>
 <style scoped>

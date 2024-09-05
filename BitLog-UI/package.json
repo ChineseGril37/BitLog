@@ -9,6 +9,7 @@
   "dependencies": {
     "@mdi/font": "6.2.95",
     "axios": "^1.7.2",
+    "mavon-editor": "^3.0.1",
     "roboto-fontface": "*",
     "vue": "^3.4.21",
     "vue-router": "^4.4.0",

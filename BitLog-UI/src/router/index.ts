@@ -12,27 +12,27 @@ const router = createRouter({
       children:[
         {
           path: '/post',
-          name: '博客',
+          name: 'post',
           component: () => import('../views/Post/index.vue'),
         },
         {
-          path: '/post/article',
-          name: '文章',
+          path: '/article',
+          name: 'article',
           component: () => import('../views/Post/Article.vue'),
         },
         {
           path: '/mood',
-          name: '随笔',
+          name: 'mood',
           component: () => import('../views/Mood/index.vue'),
         },
         {
           path: '/resource',
-          name: '资源',
+          name: 'resource',
           component: () => import('../views/Resource/index.vue'),
         },
         {
           path: '/friends',
-          name: '友链',
+          name: 'friend',
           component: () => import('@/views/Friends/index.vue'),
         }
       ]

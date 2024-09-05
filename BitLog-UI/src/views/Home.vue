@@ -8,7 +8,6 @@
         </a>
         <RouterLink
           class="header_btn font_set"
-          active-class=""
           v-for="link in links"
             :to="link.path"
             :text="link.title"

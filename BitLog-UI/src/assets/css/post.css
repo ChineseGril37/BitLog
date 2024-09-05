@@ -1,5 +1,5 @@
 .main_background{
-    min-height: 89%;
+    min-height: 81%;
     height: fit-content;
     padding:0;
 }
@@ -20,16 +20,6 @@
     background-color: rgb(33, 33, 33);
     border-radius: 10px;
 
-}
-.post_chunk{
-    height: 20dvh;
-    margin-bottom: 5px;
-    padding: 5px;
-}
-.post_table{
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgb(25, 25, 25);
 }
 .post_sheet{
     padding: 5px;

@@ -26,13 +26,14 @@
 
         <!-- 帖子展示框 -->
         <post-chunk
-          class="post_chunk"
           v-for="postInfo in postList"
           :list="postInfo"
           link
         ></post-chunk>
+          <router-link :to="{name:'article',query:{id: 5}}">
+            <p>Router-Link:Test</p>
+          </router-link>
       </v-sheet>
-
       </div>
     </v-container>
   </v-main>
