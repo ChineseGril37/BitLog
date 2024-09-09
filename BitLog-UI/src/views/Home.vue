@@ -1,9 +1,16 @@
 <template>
   <!--上导航栏-->
-    <v-app-bar class="font_set app_bar" flat>
-      <v-container class="mx-auto d-flex align-center justify-center ">
+    <v-app-bar
+      scroll-behavior="elevate"
+      color="rgb(248, 245, 242)"
+      class="font_set rounded">
+      <v-container class="d-flex align-center">
         <!-- 网站抬头logo -->
-        <a href="/">
+        <a href="/" class="d-flex align-center">
+          <img
+            src="../../public/BitLog_logo_noBackground.png"
+            class="site_logo"
+          >
           <div class="site_name font_set" >BitLog</div>
         </a>
         <RouterLink
@@ -20,6 +27,7 @@
             label="搜索"
             rounded="lg"
             variant="solo-filled"
+            bg-color="#f45d48"
             hide-details
             single-line
           ></v-text-field>

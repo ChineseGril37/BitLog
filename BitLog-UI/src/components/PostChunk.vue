@@ -3,24 +3,26 @@
     <!-- Router-Link跳转 -->
     <RouterLink
       class="font_set chunk_title"
-      :to="{path:'/article',query:{id: props.list.id}}"
+      :to="{path:'article',query:{id: props.list.id}}"
     >
       <p>{{list.title}}</p>
     </RouterLink>
-<!--    a标签跳转-->
-<!--    <a-->
-<!--      href="javascript:void(0);"-->
-<!--      class="font_set chunk_title"-->
-<!--      @click="pushArticle"-->
-<!--    >-->
-<!--      <p>herf跳转:{{list.title}}</p>-->
-<!--    </a>-->
-<!--    <div-->
-<!--      class="font_set chunk_title"-->
-<!--      @click="pushArticle"-->
-<!--    >-->
-<!--      <p>router.push:{{list.title}}</p>-->
-<!--    </div>-->
+    <!--
+    a标签跳转
+    <a
+      href="javascript:void(0);"
+      class="font_set chunk_title"
+      @click="pushArticle"
+    >
+      <p>herf跳转:{{list.title}}</p>
+    </a>
+    <div
+      class="font_set chunk_title"
+      @click="pushArticle"
+    >
+      <p>router.push:{{list.title}}</p>
+    </div>
+    -->
     <div
       class="chunk_type"
       v-ripple

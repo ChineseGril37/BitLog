@@ -1,9 +1,13 @@
 .site_name{
     font-weight: 400;
-    margin-right: 1dvw;
     font-size: 24px;
     letter-spacing: 1px;
-    padding: 2dvw 0;
+}
+.site_logo{
+    height: 3vh;
+    width: 3vh;
+    border-radius: 15%;
+    margin:0 1vh 0 0;
 }
 .header_btn{
     padding: 0 1dvw;
@@ -11,7 +15,9 @@
     font-size: 18px;
 }
 .font_set{
-    color: rgb(195,195,196);
+    color: #232323;
+    font-family: Sinter-Bold,system-ui;
+
 }
 .more_information{
     height: 20dvh;

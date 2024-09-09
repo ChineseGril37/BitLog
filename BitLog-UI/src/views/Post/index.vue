@@ -30,9 +30,6 @@
           :list="postInfo"
           link
         ></post-chunk>
-          <router-link :to="{name:'article',query:{id: 5}}">
-            <p>Router-Link:Test</p>
-          </router-link>
       </v-sheet>
       </div>
     </v-container>

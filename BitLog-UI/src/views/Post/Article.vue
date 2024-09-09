@@ -1,6 +1,5 @@
 <template>
   <div class="main_container">
-    <div>id={{userId}}</div>
     <div>
       <div>
         <mavon-editor
