@@ -1,26 +1,26 @@
 <template>
-
-  <v-main class="main_background">
     <v-container class="main_container d-flex flex-row">
+      <!-- 类型筛选器 -->
       <div class="float_fix">
-        <div class="list_float position-fixed">
+        <div class="list_float">
           <v-sheet class="border_radius">
-            <v-list class="border_radius">
+            <v-list class="border_radius" :active-class=sideBar active-color="#078080">
               <v-list-item
+                class="font_set"
                 v-for="n in sideBar"
                 :key="n.title"
                 :title="`${n.title}`"
                 link
-                class="font_set"
                 @click="sort(n.type)"
               ></v-list-item>
             </v-list>
           </v-sheet>
         </div>
       </div>
-      <div class="list_col post_container">
+      <div class=" post_container">
         <v-sheet
-        class="font_set post_sheet border_radius"
+          color="#fffffe"
+        class="font_set"
       >
         <!-- 排序筛选器 -->
 
@@ -33,7 +33,6 @@
       </v-sheet>
       </div>
     </v-container>
-  </v-main>
 </template>
 
 <script setup lang="ts" name="Post">

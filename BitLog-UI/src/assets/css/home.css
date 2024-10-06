@@ -1,25 +1,33 @@
+.logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .site_name{
-    font-weight: 400;
-    font-size: 24px;
-    letter-spacing: 1px;
+    font-size: 25px;
+    margin:0 1vh 0 1vh;
+    padding: 0;
 }
 .site_logo{
-    height: 3vh;
-    width: 3vh;
+    height: 2.5vh;
+    width: 2.5vh;
     border-radius: 15%;
-    margin:0 1vh 0 0;
 }
 .header_btn{
     padding: 0 1dvw;
-    margin: 0 1.5dvw  ;
+    margin: 0 1.5dvw;
     font-size: 18px;
+}
+.logo_font{
+    color: #232323;
+    font-family: Sinter-Bold,system-ui;
+    font-size: 20px;
 }
 .font_set{
     color: #232323;
     font-family: Sinter-Bold,system-ui;
-
 }
 .more_information{
     height: 20dvh;
-    background-color: rgb(33,33,33);
+    background-color: rgb(248, 245, 242);
 }

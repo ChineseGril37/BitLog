@@ -3,25 +3,27 @@
     margin-bottom: 5px;
     padding: 5px;;
     border-radius: 10px;
-    background-color: rgb(25, 25, 25);
+    background-color: #f8f5f2;
 }
 .chunk_title{
-    font-size: 1.2em;
+    font-family: Sinter-Regular,system-ui;
+    font-weight: bold;
+    font-size: 20px;
     cursor: pointer;
+}
+.chunk_type{
+    border: 2px solid #232323;
+    border-radius: 5px;
+    width:fit-content;
+    font-size: 0.8em;
+    font-weight: bolder;
+    padding: 1px 3px 1px 3px;
 }
 .chunk_shortcut{
 
 }
-.chunk_type{
-    background-color: #2d2d2d;
-    color: #dcdcdc;
-    border-radius: 5px;
-    width:fit-content;
-    font-size: 0.9em;
-}
 .chunk_type:hover{
-    background-color: #414141;
-    color: #e6e6e6;
+    background-color: #078080;
 }
 .chunk_details{
     margin: 0 15px 0 15px;

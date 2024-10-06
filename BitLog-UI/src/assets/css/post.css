@@ -3,14 +3,12 @@
     height: fit-content;
     padding:0;
 }
-.list_col{
-    padding: 0 1dvh;
+.float_fix{
+    width: 21dvh;
 }
 .list_float{
-    width: 20dvh;
-}
-.float_fix{
-    width: 18%;
+    position: fixed;
+    width: 17.5dvh;
 }
 .post_container{
     padding: 0;
@@ -20,9 +18,7 @@
     border-radius: 10px;
 
 }
-.post_sheet{
-    padding: 5px;
-}
 .border_radius{
+    background-color: rgb(248, 245, 242);
     border-radius: 8px;
 }

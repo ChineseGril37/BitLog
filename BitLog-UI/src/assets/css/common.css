@@ -1,9 +1,14 @@
 .font_set{
-    color: rgb(245,245,247);
+    color: rgb(34, 37, 37);
 }
 .main_container{
     min-height: 78.3%;
     padding: 8px 0 8px 0;
+    color: rgb(34, 37, 37);
+}
+.background{
+    font-family: Sinter-Regular,system-ui;
+    background-color: rgb(255, 255, 254);
 }
 * {
     text-decoration: none;

@@ -1,16 +1,16 @@
 <template>
-  <div class="main_container">
+  <v-container class="main_container">
     <div>
-      <div>
-        <mavon-editor
-          :model-value="article.shortcut"
-          :toolbarsFlag="false"
-          :subfield="false"
-          defaultOpen="preview"
-        />
-      </div>
+      {{userId}}
     </div>
-  </div>
+    <mavon-editor
+    :model-value="article.shortcut"
+    :toolbarsFlag="false"
+    :subfield="false"
+    defaultOpen="preview"
+  />
+  </v-container>
+
 </template>
 <script setup lang="ts">
 //首先在setup中定义

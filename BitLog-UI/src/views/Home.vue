@@ -3,15 +3,16 @@
     <v-app-bar
       scroll-behavior="elevate"
       color="rgb(248, 245, 242)"
-      class="font_set rounded">
-      <v-container class="d-flex align-center">
+      class="font_set rounded"
+    >
+      <v-container class="d-flex align-center justify-center">
         <!-- 网站抬头logo -->
-        <a href="/" class="d-flex align-center">
+        <a href="/" class="logo_container">
           <img
             src="../../public/BitLog_logo_noBackground.png"
             class="site_logo"
           >
-          <div class="site_name font_set" >BitLog</div>
+          <div class="site_name logo_font" >BitLog</div>
         </a>
         <RouterLink
           class="header_btn font_set"
@@ -35,9 +36,17 @@
         </v-responsive>
       </v-container>
     </v-app-bar>
-  <RouterView></RouterView>
+  <keep-alive>
+    <RouterView></RouterView>
+    <mavon-editor
+      model-value="123"
+      :toolbarsFlag="false"
+      :subfield="false"
+      defaultOpen="preview"
+    />
+  </keep-alive>
   <!--备案和信息栏-->
-  <div class="more_information">
+  <div class="more_information font_set">
     <div class="information_container">BitLog</div>
   </div>
 </template>
