@@ -11,7 +11,7 @@
  Target Server Version : 80039 (8.0.39)
  File Encoding         : 65001
 
- Date: 21/08/2024 21:23:41
+ Date: 06/10/2024 23:27:29
 */
 
 SET NAMES utf8mb4;
@@ -40,7 +40,7 @@ CREATE TABLE `comment`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `file`;
 CREATE TABLE `file`  (
-  `id` int NOT NULL AUTO_INCREMENT COMMENT 'md文件ID',
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '文件ID',
   `file_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL COMMENT '文件名',
   `file_path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL COMMENT '文件地址',
   `file_size` double NOT NULL COMMENT '文件大小',
