@@ -36,15 +36,7 @@
         </v-responsive>
       </v-container>
     </v-app-bar>
-  <keep-alive>
     <RouterView></RouterView>
-    <mavon-editor
-      model-value="123"
-      :toolbarsFlag="false"
-      :subfield="false"
-      defaultOpen="preview"
-    />
-  </keep-alive>
   <!--备案和信息栏-->
   <div class="more_information font_set">
     <div class="information_container">BitLog</div>

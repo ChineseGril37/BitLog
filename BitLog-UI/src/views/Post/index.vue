@@ -4,7 +4,7 @@
       <div class="float_fix">
         <div class="list_float">
           <v-sheet class="border_radius">
-            <v-list class="border_radius" :active-class=sideBar active-color="#078080">
+            <v-list class="border_radius">
               <v-list-item
                 class="font_set"
                 v-for="n in sideBar"

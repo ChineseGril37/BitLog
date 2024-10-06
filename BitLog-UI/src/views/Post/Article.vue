@@ -2,13 +2,8 @@
   <v-container class="main_container">
     <div>
       {{userId}}
+      <v-md-editor v-model="text" height="400px"></v-md-editor>
     </div>
-    <mavon-editor
-    :model-value="article.shortcut"
-    :toolbarsFlag="false"
-    :subfield="false"
-    defaultOpen="preview"
-  />
   </v-container>
 
 </template>
@@ -21,7 +16,8 @@ import request from '@/api/axios'
 const route = useRoute()
 const userId = route.query.id
 // 使用 ref 来包裹 article 确保其是响应式的
-const article = ref(null)
+const article = ref()
+let text = "**神原动启!**"
 // 在页面加载完成前调用fetch函数获取具体文章信息
 onBeforeMount(() => {
   fetchArticle()
