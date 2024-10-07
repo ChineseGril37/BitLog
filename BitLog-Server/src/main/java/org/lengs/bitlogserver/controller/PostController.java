@@ -1,11 +1,16 @@
 package org.lengs.bitlogserver.controller;
 
+import org.lengs.bitlogserver.common.MarkDownReader;
 import org.lengs.bitlogserver.controller.request.PostRequest;
 import org.lengs.bitlogserver.entity.Post;
 import org.lengs.bitlogserver.service.IPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -32,8 +37,14 @@ public class PostController {
         return postService.sort(postRequest);
     }
     @GetMapping("/selectById")
-    public Post selectById(PostRequest postRequest){
-        return postService.selectById(postRequest);
+    public Post selectById(PostRequest postRequest) throws IOException {
+        Post post = postService.selectById(postRequest);
+        if(post == null){
+            throw new RuntimeException("查询不到对应的结果");
+        }
+        post.setFile(MarkDownReader.markDownReader("C:\\Users\\lengs\\IdeaProjects\\BitLog\\debug.md"));
+        System.out.println(post.getFile());
+        return post;
     }
     @GetMapping("/runtimeError")
     public int error(){

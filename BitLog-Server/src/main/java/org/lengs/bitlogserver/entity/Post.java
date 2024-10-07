@@ -1,5 +1,6 @@
 package org.lengs.bitlogserver.entity;
 
+import java.io.File;
 import java.util.Date;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -23,4 +24,5 @@ public class Post {
     private Integer views;
     private Double hotpoint;
     private String shortcut;
+    private String file;
 }

@@ -1,8 +1,8 @@
 <template>
   <v-container class="main_container">
     <div>
-      {{userId}}
-      <v-md-editor v-model="text" height="400px"></v-md-editor>
+      <v-md-preview :text="article.file"></v-md-preview>
+      <v-md-editor v-model="article.shortcut" height="400px"></v-md-editor>
     </div>
   </v-container>
 
@@ -16,8 +16,7 @@ import request from '@/api/axios'
 const route = useRoute()
 const userId = route.query.id
 // 使用 ref 来包裹 article 确保其是响应式的
-const article = ref()
-let text = "**神原动启!**"
+const article = ref({})
 // 在页面加载完成前调用fetch函数获取具体文章信息
 onBeforeMount(() => {
   fetchArticle()
@@ -30,11 +29,8 @@ function fetchArticle(){
         //console.log(article.value)
       }
       else {
-        alert(res.msg)
+        alert(res.message)
       }
-    })
-    .catch(error => {
-      console.error('Failed to fetch article:', error)
     })
 }
 </script>
