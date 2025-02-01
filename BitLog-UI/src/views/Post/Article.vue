@@ -2,7 +2,7 @@
   <v-container class="main_container">
     <div>
       <v-md-preview :text="article.file"></v-md-preview>
-      <v-md-editor v-model="article.shortcut" height="400px"></v-md-editor>
+<!--      <v-md-editor v-model="article.shortcut" height="400px"></v-md-editor>-->
     </div>
   </v-container>
 
