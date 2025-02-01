@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : MySQL
+ Source Server         : mysql
  Source Server Type    : MySQL
- Source Server Version : 80039 (8.0.39)
+ Source Server Version : 80031 (8.0.31)
  Source Host           : localhost:3306
  Source Schema         : bitlog
 
  Target Server Type    : MySQL
- Target Server Version : 80039 (8.0.39)
+ Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 06/10/2024 23:27:29
+ Date: 01/02/2025 22:40:49
 */
 
 SET NAMES utf8mb4;
@@ -47,7 +47,7 @@ CREATE TABLE `file`  (
   `createtime` datetime NOT NULL COMMENT '创建时间',
   `updatetime` datetime NULL DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id` DESC) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of file
@@ -93,7 +93,7 @@ CREATE TABLE `post_tag`  (
   INDEX `tag_id`(`tag_id` ASC) USING BTREE,
   CONSTRAINT `post_tag_ibfk_1` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `post_tag_ibfk_2` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of post_tag
@@ -119,6 +119,21 @@ INSERT INTO `tag` VALUES (4, 'Redis');
 INSERT INTO `tag` VALUES (5, 'BitLog');
 INSERT INTO `tag` VALUES (6, 'MySQL');
 INSERT INTO `tag` VALUES (7, 'TypeScript');
+
+-- ----------------------------
+-- Table structure for tag_post
+-- ----------------------------
+DROP TABLE IF EXISTS `tag_post`;
+CREATE TABLE `tag_post`  (
+  `id` int NOT NULL COMMENT '关联ID',
+  `tag_id` int NULL DEFAULT NULL COMMENT 'TagID',
+  `post_id` int NULL DEFAULT NULL COMMENT '帖子ID',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tag_post
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for user
