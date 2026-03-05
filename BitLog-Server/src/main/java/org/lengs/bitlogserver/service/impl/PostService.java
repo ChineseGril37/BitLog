@@ -8,9 +8,10 @@ import org.lengs.bitlogserver.entity.Post;
 import org.lengs.bitlogserver.service.IPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.lengs.bitlogserver.common.MarkDownReader;
+import java.io.File;
 import java.util.Comparator;
 import java.util.List;
-
 
 /**
  * @Author: lengs
@@ -22,16 +23,17 @@ import java.util.List;
 public class PostService implements IPostService {
     @Autowired
     PostMapper postMapper;
+
     @Override
     public Object listPost() {
         return postMapper.listPost();
     }
 
     @Override
-    public Object sort(PostRequest postRequest){
-        PageHelper.startPage(postRequest.getPageNum(),postRequest.getPageSize());
+    public Object sort(PostRequest postRequest) {
+        PageHelper.startPage(postRequest.getPageNum(), postRequest.getPageSize());
         List<Post> posts = postMapper.sort(postRequest);
-        //System.out.printf("Fetched posts from database: %s%n", posts);
+        // System.out.printf("Fetched posts from database: %s%n", posts);
         switch (postRequest.getSelectType()) {
             case "Likes":
                 posts.sort(Comparator.comparing(Post::getLikes).reversed());
@@ -54,7 +56,22 @@ public class PostService implements IPostService {
     }
 
     @Override
-    public Post selectById(PostRequest postRequest) {
-        return postMapper.selectById(postRequest);
+    public Post selectById(PostRequest postRequest) throws IOException {
+        Post post = postMapper.selectById(postRequest);
+        if (post == null) {
+            return null;
+        }
+        org.lengs.bitlogserver.entity.File fileEntity = postMapper.selectById(postRequest);
+        if (fileEntity != null) {
+            String temp_path = fileEntity.getFilePath();
+            // 格式化路径，确保为绝对路径
+            java.io.File file = new java.io.File(temp_path);
+            if (!file.isAbsolute()) {
+                file = new java.io.File(System.getProperty("user.dir"), temp_path);
+            }
+            temp_path = file.getCanonicalPath();
+            post.setF   ile(MarkDownReader.markDownReader(temp_path));
+        }
+        return post;
     }
 }

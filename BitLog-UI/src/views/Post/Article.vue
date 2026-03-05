@@ -22,7 +22,7 @@ onBeforeMount(() => {
   fetchArticle()
 })
 function fetchArticle(){
-  request.get('/post/selectById', { params: { id: userId } })
+  request.get('/post/file', { params: { id: userId } })
     .then(res => {
       if(res.status === 200){
         article.value = res.data  // 将获取到的数据赋值给 article

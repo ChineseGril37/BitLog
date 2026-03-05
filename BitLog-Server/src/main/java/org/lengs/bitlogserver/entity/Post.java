@@ -25,4 +25,5 @@ public class Post {
     private Double hotpoint;
     private String shortcut;
     private String file;
+    private Integer fileId;
 }

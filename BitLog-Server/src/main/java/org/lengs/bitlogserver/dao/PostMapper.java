@@ -3,6 +3,7 @@ package org.lengs.bitlogserver.dao;
 import org.apache.ibatis.annotations.Mapper;
 import org.lengs.bitlogserver.controller.request.PostRequest;
 import org.lengs.bitlogserver.entity.Post;
+import org.lengs.bitlogserver.entity.File;
 import java.util.List;
 
 /**

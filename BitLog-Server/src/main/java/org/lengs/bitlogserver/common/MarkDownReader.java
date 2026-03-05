@@ -13,7 +13,7 @@ import java.io.*;
 public class MarkDownReader {
 
     // 读取Markdown文件内容并返回File对象
-    public static String markDownReader(String path) throws IOException {
+    public static String    markDownReader(String path) throws IOException {
         StringBuilder content = new StringBuilder();
         File file = new File(path);
 

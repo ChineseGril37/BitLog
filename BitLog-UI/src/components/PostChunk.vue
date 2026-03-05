@@ -3,7 +3,7 @@
     <!-- Router-Link跳转 -->
     <RouterLink
       class="font_set chunk_title"
-      :to="{path:'article',query:{id: props.list.id}}"
+      :to="{name: 'blog-detail', params: {id: props.list.id}}"
     >
       <p>{{list.title}}</p>
     </RouterLink>
@@ -54,8 +54,8 @@ import router from '@/router'
 const props = defineProps(['list'])
 function pushArticle(){
   router.push({
-    name: 'article',
-    query:{
+    name: 'blog-detail',
+    params: {
       id: props.list.id
     }
   })

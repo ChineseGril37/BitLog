@@ -23,7 +23,7 @@
         class="font_set"
       >
         <!-- 排序筛选器 -->
-
+        
         <!-- 帖子展示框 -->
         <post-chunk
           v-for="postInfo in postList"
