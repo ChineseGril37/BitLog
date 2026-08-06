@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.lengs.bitlogserver.common.MarkDownReader;
 import java.io.File;
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.List;
 
@@ -61,16 +62,14 @@ public class PostService implements IPostService {
         if (post == null) {
             return null;
         }
-        org.lengs.bitlogserver.entity.File fileEntity = postMapper.selectById(postRequest);
-        if (fileEntity != null) {
-            String temp_path = fileEntity.getFilePath();
+        String filePath = post.getFile();
+        if (filePath != null && !filePath.isBlank()) {
             // 格式化路径，确保为绝对路径
-            java.io.File file = new java.io.File(temp_path);
+            java.io.File file = new java.io.File(filePath);
             if (!file.isAbsolute()) {
-                file = new java.io.File(System.getProperty("user.dir"), temp_path);
+                file = new java.io.File(System.getProperty("user.dir"), filePath);
             }
-            temp_path = file.getCanonicalPath();
-            post.setF   ile(MarkDownReader.markDownReader(temp_path));
+            post.setFile(MarkDownReader.markDownReader(file.getCanonicalPath()));
         }
         return post;
     }

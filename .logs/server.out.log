@@ -1,0 +1,295 @@
+14:22:58,219 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+14:22:58,223 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - Here is a list of configurators discovered as a service, by rank: 
+14:22:58,223 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:22:58,223 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+14:22:58,223 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:22:58,226 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:22:58,226 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:22:58,227 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:22:58,228 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+14:22:58,229 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+14:22:58,229 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:22:58,229 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:22:58,229 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:22:58,230 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:22:58,231 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:nested:/E:/Cursor%20Project/BitLog/BitLog-Server/target/BitLog-Server-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml]
+14:22:58,241 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4567f35d - URL [jar:nested:/E:/Cursor%20Project/BitLog/BitLog-Server/target/BitLog-Server-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+14:22:58,378 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+14:22:58,378 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:22:58,388 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:22:58,420 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [PROD_FILE]
+14:22:58,420 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:22:58,433 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1610525991 - No compression will be used
+14:22:58,434 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1610525991 - Will use the pattern /root/logstash/log//info.%d{yyyy-MM-dd}.log for the active file
+14:22:58,449 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/root/logstash/log//info.%d{yyyy-MM-dd}.log'.
+14:22:58,449 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+14:22:58,458 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-08-06T06:22:58.458Z
+14:22:58,461 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+14:22:58,461 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+14:22:58,461 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+14:22:58,461 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - Active log file name: /root/logstash/log//info.2026-08-06.log
+14:22:58,461 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - File property is set to [null]
+14:22:58,463 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [PROD_FILE_ERROR]
+14:22:58,463 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:22:58,464 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1327006586 - No compression will be used
+14:22:58,464 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1327006586 - Will use the pattern /root/logstash/log//error.%d{yyyy-MM-dd}.log for the active file
+14:22:58,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/root/logstash/log//error.%d{yyyy-MM-dd}.log'.
+14:22:58,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+14:22:58,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-08-06T06:22:58.464Z
+14:22:58,465 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+14:22:58,465 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+14:22:58,465 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+14:22:58,465 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - Active log file name: /root/logstash/log//error.2026-08-06.log
+14:22:58,465 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - File property is set to [null]
+14:22:58,465 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+14:22:58,466 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+14:22:58,467 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [PROD_FILE] to Logger[ROOT]
+14:22:58,467 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [PROD_FILE_ERROR] to Logger[ROOT]
+14:22:58,467 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@359f7cdf - End of configuration.
+14:22:58,468 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1fa268de - Registering current configuration as safe fallback point
+14:22:58,468 |-INFO in ch.qos.logback.classic.util.ContextInitializer@2e005c4b - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 239 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+14:22:58,808 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@19e4fcac - URL [jar:nested:/E:/Cursor%20Project/BitLog/BitLog-Server/target/BitLog-Server-0.0.1-SNAPSHOT.jar/!BOOT-INF/classes/!/logback.xml] is not of type file
+14:22:58,814 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+14:22:58,814 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:22:58,815 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:22:58,815 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [PROD_FILE]
+14:22:58,815 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:22:58,816 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1388563249 - No compression will be used
+14:22:58,816 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1388563249 - Will use the pattern /root/logstash/log//info.%d{yyyy-MM-dd}.log for the active file
+14:22:58,817 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/root/logstash/log//info.%d{yyyy-MM-dd}.log'.
+14:22:58,817 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+14:22:58,817 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-08-06T06:22:58.817Z
+14:22:58,818 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+14:22:58,818 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+14:22:58,818 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+14:22:58,818 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - Active log file name: /root/logstash/log//info.2026-08-06.log
+14:22:58,818 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE] - File property is set to [null]
+14:22:58,818 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [PROD_FILE_ERROR]
+14:22:58,818 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:22:58,819 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1266265220 - No compression will be used
+14:22:58,819 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1266265220 - Will use the pattern /root/logstash/log//error.%d{yyyy-MM-dd}.log for the active file
+14:22:58,819 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/root/logstash/log//error.%d{yyyy-MM-dd}.log'.
+14:22:58,819 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+14:22:58,819 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-08-06T06:22:58.819Z
+14:22:58,820 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+14:22:58,820 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+14:22:58,820 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+14:22:58,820 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - Active log file name: /root/logstash/log//error.2026-08-06.log
+14:22:58,820 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[PROD_FILE_ERROR] - File property is set to [null]
+14:22:58,820 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+14:22:58,820 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@53941c2f - Propagating INFO level on Logger[ROOT] onto the JUL framework
+14:22:58,821 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+14:22:58,821 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [PROD_FILE] to Logger[ROOT]
+14:22:58,821 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [PROD_FILE_ERROR] to Logger[ROOT]
+14:22:58,821 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@6dab9b6d - End of configuration.
+14:22:58,821 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@21fd5faa - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2026-08-06 14:22:58.973 |-INFO  [main] org.lengs.bitlogserver.BitLogServerApplication [50] -| Starting BitLogServerApplication v0.0.1-SNAPSHOT using Java 26.0.1 with PID 12676 (E:\Cursor Project\BitLog\BitLog-Server\target\BitLog-Server-0.0.1-SNAPSHOT.jar started by lengs in E:\Cursor Project\BitLog\BitLog-Server)
+2026-08-06 14:22:58.977 |-INFO  [main] org.lengs.bitlogserver.BitLogServerApplication [654] -| No active profile set, falling back to 1 default profile: "default"
+2026-08-06 14:22:58.978 |-DEBUG [main] org.springframework.boot.SpringApplication [687] -| Loading source class org.lengs.bitlogserver.BitLogServerApplication
+2026-08-06 14:22:59.039 |-DEBUG [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [671] -| Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6bbe2511
+2026-08-06 14:22:59.994 |-DEBUG [main] org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory [81] -| Code archive: E:\Cursor Project\BitLog\BitLog-Server\target\BitLog-Server-0.0.1-SNAPSHOT.jar
+2026-08-06 14:22:59.994 |-DEBUG [main] org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory [125] -| Code archive: E:\Cursor Project\BitLog\BitLog-Server\target\BitLog-Server-0.0.1-SNAPSHOT.jar
+2026-08-06 14:22:59.995 |-DEBUG [main] org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory [149] -| None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-08-06 14:23:00.018 |-INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [111] -| Tomcat initialized with port 7071 (http)
+2026-08-06 14:23:00.030 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [173] -| Initializing ProtocolHandler ["http-nio-7071"]
+2026-08-06 14:23:00.033 |-INFO  [main] org.apache.catalina.core.StandardService [173] -| Starting service [Tomcat]
+2026-08-06 14:23:00.035 |-INFO  [main] org.apache.catalina.core.StandardEngine [173] -| Starting Servlet engine: [Apache Tomcat/10.1.25]
+2026-08-06 14:23:00.077 |-INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [173] -| Initializing Spring embedded WebApplicationContext
+2026-08-06 14:23:00.078 |-DEBUG [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [290] -| Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-08-06 14:23:00.078 |-INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [296] -| Root WebApplicationContext: initialization completed in 1040 ms
+2026-08-06 14:23:00.091 |-DEBUG [main] org.springframework.boot.web.servlet.ServletContextInitializerBeans [235] -| Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2026-08-06 14:23:00.091 |-DEBUG [main] org.springframework.boot.web.servlet.ServletContextInitializerBeans [235] -| Mapping servlets: dispatcherServlet urls=[/]
+2026-08-06 14:23:00.114 |-DEBUG [main] org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter [240] -| Filter 'requestContextFilter' configured for use
+2026-08-06 14:23:00.115 |-DEBUG [main] org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter [240] -| Filter 'characterEncodingFilter' configured for use
+2026-08-06 14:23:00.116 |-DEBUG [main] org.springframework.boot.web.servlet.filter.OrderedFormContentFilter [240] -| Filter 'formContentFilter' configured for use
+2026-08-06 14:23:00.500 |-DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [366] -| 8 mappings in 'requestMappingHandlerMapping'
+2026-08-06 14:23:00.534 |-DEBUG [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [187] -| Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-06 14:23:00.573 |-DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [634] -| ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 2 ResponseBodyAdvice
+2026-08-06 14:23:00.613 |-DEBUG [main] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [305] -| ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+2026-08-06 14:23:00.754 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [173] -| Starting ProtocolHandler ["http-nio-7071"]
+2026-08-06 14:23:00.786 |-INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [243] -| Tomcat started on port 7071 (http) with context path '/'
+2026-08-06 14:23:00.808 |-INFO  [main] org.lengs.bitlogserver.BitLogServerApplication [56] -| Started BitLogServerApplication in 2.241 seconds (process running for 2.917)
+2026-08-06 14:23:00.814 |-DEBUG [main] org.springframework.boot.availability.ApplicationAvailabilityBean [77] -| Application availability state LivenessState changed to CORRECT
+2026-08-06 14:23:00.820 |-DEBUG [main] org.springframework.boot.availability.ApplicationAvailabilityBean [77] -| Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-08-06 14:23:00.976 |-INFO  [http-nio-7071-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [173] -| Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-06 14:23:00.976 |-INFO  [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [532] -| Initializing Servlet 'dispatcherServlet'
+2026-08-06 14:23:00.976 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [533] -| Detected StandardServletMultipartResolver
+2026-08-06 14:23:00.976 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [557] -| Detected AcceptHeaderLocaleResolver
+2026-08-06 14:23:00.976 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [583] -| Detected FixedThemeResolver
+2026-08-06 14:23:00.979 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [733] -| Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@13abdea5
+2026-08-06 14:23:00.979 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [797] -| Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f498eff
+2026-08-06 14:23:00.980 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [549] -| enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-08-06 14:23:00.980 |-INFO  [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [554] -| Completed initialization in 4 ms
+2026-08-06 14:23:00.988 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/", parameters={}
+2026-08-06 14:23:01.000 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.BitLogServerApplication#health()
+2026-08-06 14:23:01.036 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-08-06 14:23:01.080 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing ["{"status":200,"message":"成功","data":"SUCCESS！","timestamp":"2026-08-06 14:23:01"}"]
+2026-08-06 14:23:01.090 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:24:31.409 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/list", parameters={}
+2026-08-06 14:24:31.411 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#listPost()
+2026-08-06 14:24:31.434 |-INFO  [http-nio-7071-exec-3] com.zaxxer.hikari.HikariDataSource [109] -| HikariPool-1 - Starting...
+2026-08-06 14:24:31.550 |-INFO  [http-nio-7071-exec-3] com.zaxxer.hikari.pool.HikariPool [554] -| HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@326ca2e0
+2026-08-06 14:24:31.552 |-INFO  [http-nio-7071-exec-3] com.zaxxer.hikari.HikariDataSource [122] -| HikariPool-1 - Start completed.
+2026-08-06 14:24:31.589 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-08-06 14:24:31.592 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=[Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, creat (truncated)...]
+2026-08-06 14:24:31.606 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:24:31.617 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=5", parameters={masked}
+2026-08-06 14:24:31.618 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:24:31.635 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-08-06 14:24:31.636 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=5, author=1, title=BitLog开发记录, type=BitLog, createtime=W (truncated)...]
+2026-08-06 14:24:31.637 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:24:42.692 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/", parameters={}
+2026-08-06 14:24:42.694 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.BitLogServerApplication#health()
+2026-08-06 14:24:42.696 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2026-08-06 14:24:42.698 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing ["{"status":200,"message":"成功","data":"SUCCESS！","timestamp":"2026-08-06 14:24:42"}"]
+2026-08-06 14:24:42.699 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:24:42.861 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/favicon.ico", parameters={}
+2026-08-06 14:24:42.866 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [531] -| Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-08-06 14:24:42.870 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.resource.ResourceHttpRequestHandler [584] -| Resource not found
+2026-08-06 14:24:42.874 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [420] -| Using @ExceptionHandler org.lengs.bitlogserver.common.GlobalExceptionHandler#handleException(Exception, WebRequest)
+2026-08-06 14:24:42.891 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [275] -| Using 'application/problem+json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/problem+json]
+2026-08-06 14:24:42.896 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=ProblemDetail[type='about:blank', title='Not Found', status=404, (truncated)...]
+2026-08-06 14:24:42.900 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [179] -| Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-08-06 14:24:42.902 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 404 NOT_FOUND
+2026-08-06 14:24:49.558 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/list", parameters={}
+2026-08-06 14:24:49.558 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#listPost()
+2026-08-06 14:24:49.561 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-08-06 14:24:49.562 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=[Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, creat (truncated)...]
+2026-08-06 14:24:49.563 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:24:57.833 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/list", parameters={}
+2026-08-06 14:24:57.840 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#listPost()
+2026-08-06 14:24:57.856 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:24:57.858 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=[Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, creat (truncated)...]
+2026-08-06 14:24:57.862 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:00.560 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/list", parameters={}
+2026-08-06 14:25:00.561 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#listPost()
+2026-08-06 14:25:00.566 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:00.566 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=[Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, creat (truncated)...]
+2026-08-06 14:25:00.572 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:01.539 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=&selectType=Views", parameters={masked}
+2026-08-06 14:25:01.540 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:01.673 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:01.675 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=7, startRow=1, endRow=7, t (truncated)...]
+2026-08-06 14:25:01.684 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:02.661 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=5", parameters={masked}
+2026-08-06 14:25:02.662 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:02.667 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:02.668 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=5, author=1, title=BitLog开发记录, type=BitLog, createtime=W (truncated)...]
+2026-08-06 14:25:02.670 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:03.615 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=5", parameters={masked}
+2026-08-06 14:25:03.615 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:03.619 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:03.619 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=5, author=1, title=BitLog开发记录, type=BitLog, createtime=W (truncated)...]
+2026-08-06 14:25:03.622 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:04.734 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Java&selectType=Views", parameters={masked}
+2026-08-06 14:25:04.735 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:04.744 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:04.748 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:04.750 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:04.752 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Java&selectType=Views", parameters={masked}
+2026-08-06 14:25:04.752 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:04.758 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:04.758 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:04.758 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:05.634 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=1", parameters={masked}
+2026-08-06 14:25:05.638 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:05.642 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:05.643 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, create (truncated)...]
+2026-08-06 14:25:05.645 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:06.520 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=1", parameters={masked}
+2026-08-06 14:25:06.522 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:06.525 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:06.525 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, create (truncated)...]
+2026-08-06 14:25:06.526 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:07.118 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Vue&selectType=Views", parameters={masked}
+2026-08-06 14:25:07.119 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:07.124 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:07.125 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:07.125 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:07.125 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Vue&selectType=Views", parameters={masked}
+2026-08-06 14:25:07.125 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:07.133 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:07.134 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:07.134 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:07.922 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=7", parameters={masked}
+2026-08-06 14:25:07.924 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:07.928 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:07.929 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=7, author=2, title=Vuetify实现瀑布流, type=Vue, createtime=nu (truncated)...]
+2026-08-06 14:25:07.930 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:08.450 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=&selectType=Views", parameters={masked}
+2026-08-06 14:25:08.517 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:08.521 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:08.524 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=7, startRow=1, endRow=7, t (truncated)...]
+2026-08-06 14:25:08.526 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:08.527 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=&selectType=Views", parameters={masked}
+2026-08-06 14:25:08.527 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:08.533 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:08.534 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=7, startRow=1, endRow=7, t (truncated)...]
+2026-08-06 14:25:08.535 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:25.598 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=&selectType=Views", parameters={masked}
+2026-08-06 14:25:25.599 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:25.605 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:25.608 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=7, startRow=1, endRow=7, t (truncated)...]
+2026-08-06 14:25:25.609 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:26.085 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=7", parameters={masked}
+2026-08-06 14:25:26.085 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:26.086 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:26.086 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=7, author=2, title=Vuetify实现瀑布流, type=Vue, createtime=nu (truncated)...]
+2026-08-06 14:25:26.092 |-DEBUG [http-nio-7071-exec-10] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:26.615 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Vue&selectType=Views", parameters={masked}
+2026-08-06 14:25:26.615 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:26.621 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:26.621 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:26.625 |-DEBUG [http-nio-7071-exec-6] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:26.627 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Vue&selectType=Views", parameters={masked}
+2026-08-06 14:25:26.627 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:26.632 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:26.632 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:26.633 |-DEBUG [http-nio-7071-exec-4] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:27.051 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=1", parameters={masked}
+2026-08-06 14:25:27.052 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:27.056 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:27.056 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, create (truncated)...]
+2026-08-06 14:25:27.059 |-DEBUG [http-nio-7071-exec-8] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:27.517 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Java&selectType=Views", parameters={masked}
+2026-08-06 14:25:27.518 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:27.524 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:27.524 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:27.526 |-DEBUG [http-nio-7071-exec-9] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:27.527 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=Java&selectType=Views", parameters={masked}
+2026-08-06 14:25:27.528 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:27.532 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:27.533 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=1, startRow=1, endRow=1, t (truncated)...]
+2026-08-06 14:25:27.534 |-DEBUG [http-nio-7071-exec-2] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:28.501 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/selectById?id=5", parameters={masked}
+2026-08-06 14:25:28.502 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#selectById(PostRequest)
+2026-08-06 14:25:28.506 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:28.507 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=Post(id=5, author=1, title=BitLog开发记录, type=BitLog, createtime=W (truncated)...]
+2026-08-06 14:25:28.508 |-DEBUG [http-nio-7071-exec-1] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:29.148 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/sort?type=&selectType=Views", parameters={masked}
+2026-08-06 14:25:29.149 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#sort(PostRequest)
+2026-08-06 14:25:29.154 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:29.158 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=PageInfo{pageNum=1, pageSize=20, size=7, startRow=1, endRow=7, t (truncated)...]
+2026-08-06 14:25:29.158 |-DEBUG [http-nio-7071-exec-5] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:29.596 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/post/list", parameters={}
+2026-08-06 14:25:29.597 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.controller.PostController#listPost()
+2026-08-06 14:25:29.601 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-06 14:25:29.602 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing [Result(status=200, message=成功, data=[Post(id=1, author=1, title=SpringBoot全局异常处理详解, type=Java, creat (truncated)...]
+2026-08-06 14:25:29.604 |-DEBUG [http-nio-7071-exec-3] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK
+2026-08-06 14:25:31.287 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [120] -| GET "/", parameters={}
+2026-08-06 14:25:31.287 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [531] -| Mapped to org.lengs.bitlogserver.BitLogServerApplication#health()
+2026-08-06 14:25:31.287 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [275] -| Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2026-08-06 14:25:31.291 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [120] -| Writing ["{"status":200,"message":"成功","data":"SUCCESS！","timestamp":"2026-08-06 14:25:31"}"]
+2026-08-06 14:25:31.291 |-DEBUG [http-nio-7071-exec-7] org.springframework.web.servlet.DispatcherServlet [1138] -| Completed 200 OK

@@ -1,0 +1,16 @@
+
+> BitLog-UI@0.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v5.2.13[39m  [2mready in [0m[1m6418[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m7070[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.61.3:[1m7070[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.54.1:[1m7070[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.229.1:[1m7070[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.30.113:[1m7070[22m/[39m
+[2m14:24:57[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mvuetify/lib/components/VBtn/index.mjs, vuetify/lib/components/VCard/index.mjs, vuetify/lib/components/VChip/index.mjs, vuetify/lib/components/VGrid/index.mjs, vuetify/lib/components/VAppBar/index.mjs, vuetify/lib/components/VResponsive/index.mjs, vuetify/lib/components/VTextField/index.mjs[32m[39m
+[2m14:24:57[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m14:24:59[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mvuetify/lib/components/VIcon/index.mjs, vuetify/lib/components/VProgressCircular/index.mjs, vuetify/lib/components/VSheet/index.mjs, vuetify/lib/components/VList/index.mjs, vuetify/lib/directives/index.mjs[32m[39m
+[2m14:24:59[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
